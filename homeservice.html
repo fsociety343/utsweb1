@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<!--NAMA = ARIF DERMAWAN
+	KELAS = 19TIB1
+	MATKUL = PEMOGRAMAN WEB 1
+	UNTUK MEMNUHI TUGAS UTS PEMOGRAMAN WEB 1
+
+	CODINGAN INI DIBUAT SENDIRI DENGAN BERDASARKAN REFERENSI PADA WEB RESMI DARI TELKOM.CO.ID
+
+-->
+<head>
+	<link rel="shortcut icon" href="image/favicon.ico">
+	<meta charset="utf-8">
+	<title>Telkom Indonesia</title>
+	<style type="text/css">
+		.hr1 {
+			height: 10px;
+			border: 0;
+			box-shadow: 0 10px 10px -10px #8c8c8c inset;
+		}
+		form {
+			width: 500px
+			margin: 50px auto;
+		}
+		.search {
+			padding: 10px 15px
+			background:rgba(50, 50, 0.2);
+			border: 3px solid #dbdbdb;
+		}
+		.button1 {
+			position: relative;
+			padding: 6px 15px;
+			left: -8px;
+			border: 2px solid #53bd84;
+			background-color: #DCDCDC;
+			color: #FF0000;
+		}
+		.button1:hover {
+			background-color: #FF0000;
+			color: #207cca;
+		}
+		.container {
+		  background:#F8F8FF;
+		  width:900px;
+		  height: 309px;
+		  margin: 0 auto;
+		  padding: 10px 10px 0 10px;
+  		}
+  		.button {					/*membuat effect button */
+  		display: inline-block;
+  		padding: 5px 50px;
+		font-size: 12px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		background-color: #4CAF50;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 9px #999;
+		}
+		.button:hover {background-color: #3e8e41} 		/*membuat effect button */
+
+		.button:active {							/*mengatur effect button */
+		  background-color: #3e8e41;
+		  box-shadow: 0 5px #666;
+		  transform: translateY(4px);
+		}
+		.bgmerah{			/*untuk membuat bgcolor pada suatu class apabila dipanggil dengan command ini*/
+			background-color: #FF0000
+		}
+		.bgabu{				/*untuk membuat bgcolor pada suatu class apabila dipanggil dengan command ini*/
+			background-color: #DCDCDC
+		}
+	</style>
+</head>
+<body>
+	<table border="0"> <!--berfungsi mengatur border table -->
+		<td><a href="index.html"> <!--berfungsi membuat link pada gambar-->
+		<img src="image/home.png" alt="Beranda" width="100" height="66"></a></td>
+		<td width="105"><a href="profil.html" style="text-decoration:none;color:red"><font size="6" face="calibri" color="red">Tentang Kami</font></a></td> <!--berfungsi untuk membuat link pada name page-->
+		<td width="106"><a href="homeservice.html" style="text-decoration:none;color:red"><font size="6" face="calibri">Home Service</font></a></td> <!--berfungsi untuk membuat link pada name page-->
+		<td width="87"><a href="wholesale.html"style="text-decoration:none"><font size="6" face="calibri" color="red">Whole Sale</font></a></td>  <!--berfungsi untuk membuat link pada name page-->
+		<td width="87"><a href="enterprise.html" style="color:red;text-decoration:none"><font size="6" face="calibri">Enterprise</font></a></td> <!--berfungsi untuk membuat link pada name page-->
+		<td width="400"></td> <!--berfungsi untuk mengatur lebar kolom-->
+		<td><form> <!--berfungsi untuk membuat inputan-->
+  			<input class="search" type="text" placeholder="Cari..." required>	
+  			<input class="button1" type="button" value="Cari">		
+		</form></td>
+	</table><br>
+	<hr class="hr1"><br>
+	<center> <!--berfungsi untuk mengatur rata tengah-->
+	<img src="image/telkom1.jpg"><br><br>
+	<hr size="1" width="900"><br><br>
+	<table cellpadding="5">
+	 	<tr>
+	 		<th width="200"><font face="arial" size="6" color="red">Indihome</font></th>  		<!--berfungsi untuk membuat font dan mengatur lebar tabel-->
+	 		<th width="200"><font face="arial" size="6" color="red">Triple Play</font></th>
+	 		<th width="200"><font face="arial" size="6" color="red">Add-On</font></th>
+	 		<th width="200"><font face="arial" size="6" color="red">Dual Play</font></th>
+	 	</tr>
+	 	<tr>
+	 		<td>
+	 			<img src="image/indihome.jpg"> <!--berfungsi untuk memanggil gambar-->
+	 		</td>
+	 		<td>
+	 			<img src="image/triplekill.jpg"> 	<!--berfungsi untuk memanggil gambar-->
+	 		</td>
+	 		<td>
+	 			<img src="image/addon.jpg">		<!--berfungsi untuk memanggil gambar-->
+	 		</td>
+	 		<td>
+	 			<img src="image/dualplay.jpg">		<!--berfungsi untuk memanggil gambar-->
+	 		</td>
+	 	</tr>
+	 	<tr>
+	 		<td align="center"><a href="indihome.html" class="button" style="background-color:#f14e4e;text-decoration:none;color:white">More</a></td>
+	 		<td align="center"><a href="tripleplay.html" class="button" style="background-color:#f14e4e;text-decoration:none;color:white">More</a></td>
+	 		<td align="center"><a href="information.html" class="button" style="background-color:#f14e4e;text-decoration:none;color:white">More</a></td>
+	 		<td align="center"><a href="indihome.html" class="button" style="background-color:#f14e4e;text-decoration:none;color:white">More</a></td>
+	 	</tr>
+	 </table><br><br>
+	 </center>
+	 <div class="bgmerah">
+	 	<center><br><br>
+		<h2><font color="white" size="7">Indihome Social Media Company Profile</font></h2>
+		<video width="800" height="500" controls autoplay>
+			<source src="video/video2.mp4" type="video/mp4">
+		</video>
+		</center>
+		<br><br>
+	 </div>
+	 <div class="bgabu">
+		<center><br>
+		<table cellpadding="3">
+			<tr>
+				<th width="100" ><a href="profil.html" style="text-decoration:none"><font face="cambria" size="4" color="black">AUTHOR</font></a></th>
+				<th width="100"><a href="profil.html" style="text-decoration:none"><font face="cambria" size="4" color="black">SITUS RESMI</font></th>
+				<th width="100"><a href="profil.html" style="text-decoration:none"><font face="cambria" size="4" color="black">REFERENSI</font></th>
+			</tr>
+		</table>
+		</center>
+		<hr size="1" width="500" style="color: red">
+		<p align="center"><font face="calibri" color="black" size="2">Simple Design by Arif Dermawan 2020</font></p><br>
+	</div>
+</body>
+
+</html>

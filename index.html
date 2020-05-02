@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="image/favicon.ico"> <!--berfungsi untuk memberikan favicon pada html -->
+	<meta charset="utf-8">
+	<title>Telkom Indonesia</title> <!--berfungsi memberikan judul pada sebuah web pagr -->
+	<style type="text/css"> /*berfungsi untuk memberikan cara untuk mengatur tampilan web supaya lebih menarik */
+		.hr2{ 				/*mengatur tampilan pada command horizontal supaya menjadi keren */
+			height: 1px
+			border: 0;
+			background-image: linier-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 75), rgba(0, 0, 0, 0));
+		}
+		.bgmerah{			/*untuk membuat bgcolor pada suatu class apabila dipanggil dengan command ini*/
+			background-color: #FF0000
+		}
+		.bgabu{				/*untuk membuat bgcolor pada suatu class apabila dipanggil dengan command ini*/
+			background-color: #DCDCDC
+		}
+		.hr1 {				/*mengatur tampilan pada command horizontal supaya menjadi keren */
+			height: 10px;
+			border: 0;
+			box-shadow: 0 10px 10px -10px #8c8c8c inset;
+		}
+		form {				/*membuat form untuk fitur pencarian di atas kanan pojok */
+			width: 500px
+			margin: 50px auto;
+		}
+		.search {			/*membuat css untuk fitur pencarian di atas kanan pojok */
+			padding: 10px 15px
+			background:rgba(50, 50, 0.2);
+			border: 3px solid #dbdbdb;
+		}
+		.button1 {			/*membuat button untuk fitur pencarian di atas kanan pojok */
+			position: relative;
+			padding: 6px 15px;
+			left: -8px;
+			border: 2px solid #53bd84;
+			background-color: #DCDCDC;
+			color: #FF0000;
+		}
+		.button1:hover { 		/*membuat modifikasi button untuk fitur pencarian di atas kanan pojok */
+			background-color: #FF0000;
+			color: #207cca;
+		}
+		.container {			/*membuat tabel dalam css untuk fitur slide gambar */
+		  background:#F8F8FF;
+		  width:900px;
+		  height: 309px;
+		  margin: 0 auto;
+		  padding: 10px 10px 0 10px;
+  		}
+
+		.slideshow_wrapper {  		/*membuat modifikasi dan effect slide dalam css untuk fitur slide gambar */
+		  width: 900px;
+		  height: 300px;
+		  overflow: hidden;
+		}
+
+		.slideshow {		/*mengatur ukuran dan pengaturan slide  */
+		  width:1800px;
+		  height:300px;
+		  margin: 0 0 0 -1000px;
+		 position: relative;
+		  -webkit-animation-name: slide_animation;
+		  -webkit-animation-duration:10s;
+		  -webkit-animation-iteration-count:infinite;
+		  -webkit-animation-direction:alternate;
+		   -webkit-animation-play-state: running;
+		}
+
+		.slide {			/*mengatur ukuran dan pengaturan slide  */
+		  width: 900px;
+		  height: 300px;
+		  position:relative;
+		  float: right;
+		  overflow:hidden;
+		  
+		}
+
+		.slideshow img{				/*mengatur ukuran dan pengaturan slide animasi */
+		  width:900px; height:300px;
+		}
+
+		@-webkit-keyframes slide_animation {
+		  
+		  0% {left:0px;}
+		  10% {left:100px;}
+		  20% {left:100px;}
+		  30% {left:100px;}
+		  40% {left:100px;}
+		  50% {left:50px;}
+		  60% {left:1000px;}
+		  70% {left:1000px;}
+		  80% {left:1000px;}
+		  90% {left:1000px;}
+		  100% {left:1000px;}  
+		}
+	.button {					/*membuat effect button */
+  		display: inline-block;
+  		padding: 5px 50px;
+		font-size: 12px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		background-color: #4CAF50;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 9px #999;
+	}
+
+	.button:hover {background-color: #3e8e41} 		/*membuat effect button */
+
+		.button:active {							/*mengatur effect button */
+		  background-color: #3e8e41;
+		  box-shadow: 0 5px #666;
+		  transform: translateY(4px);
+		}
+	} 
+	</style>
+</head>	
+<body>
+	<table border="0"> <!--berguna untuk membuat table pada html-->
+		<td><a href="index.html">
+		<img src="image/home.png" alt="Beranda" width="100" height="66"></a></td>
+		<td width="105"><a href="profil.html" style="text-decoration:none;color:red"><font size="6" face="calibri" color="red">Tentang Kami</font></a></td> <!--fungsi dari style="text-decoration:none;color:red adalah untuk menghilangkan effect underline pada text link -->
+		<td width="106"><a href="homeservice.html" style="text-decoration:none;color:red"><font size="6" face="calibri">Home Service</font></a></td> 
+		<td width="87"><a href="wholesale.html"style="text-decoration:none"><font size="6" face="calibri" color="red">Whole Sale</font></a></td>
+		<td width="87"><a href="enterprise.html" style="color:red;text-decoration:none"><font size="6" face="calibri">Enterprise</font></a></td>
+		<td width="400"></td>  <!--berguna untuk mengatur lebar baris-->
+		<td><form>
+  			<input class="search" type="text" placeholder="Cari..." required>	
+  			<input class="button1" type="button" value="Cari">		<!--berguna untuk membuat tombol button pada html-->
+		</form></td>
+	</table>	
+	<hr class="hr1">
+	<center>
+	<h2><font face="arial" color="red" size="7">Dukung Gerakan Pencegahan Covid-19</font></h2>
+	</center>
+	<div class="container">
+	  <div class="slideshow_wrapper">
+	    <div class="slideshow">
+	      <div class="slide">
+	        <img src="image/corona1.png" />
+	      </div>
+	      
+	      <div class="slide">
+	        <img src="image/corona2.png" />
+	      </div>
+	      <div class="slide">
+	        <img src="image/telkom1.jpg" />
+	      </div>
+	    </div></div></div></div><br><br>
+	 <table cellpadding="5">
+	 	<tr>
+	 		<th width="200"><font face="arial" size="6" color="red">Profil</font></th>
+	 		<th width="200"><font face="arial" size="6" color="red">Home Service</font></th>
+	 		<th width="200"><font face="arial" size="6" color="red">Stock Information</font></th>
+	 		<th width="200"><font face="arial" size="6" color="red">CSR</font></th>
+	 		<th width="200"><font face="arial" size="6" color="red">Enterprise</font></th>
+	 		<th width="200"><font face="arial" size="6" color="red">Whole Sale</font></th>
+	 	</tr>
+	 	<tr>
+	 		<td>
+	 			<img src="image/profile.jpg">
+	 		</td>
+	 		<td>
+	 			<img src="image/homeservice.jpg">
+	 		</td>
+	 		<td>
+	 			<img src="image/information.jpg">
+	 		</td>
+	 		<td>
+	 			<img src="image/csr.jpg">
+	 		</td>
+	 		<td>
+	 			<img src="image/enterprise.jpg">
+	 		</td>
+	 		<td>
+	 			<img src="image/wholesale.jpg">
+	 		</td>
+	 	</tr>
+	 	<tr>
+	 		<td align="center"><a href="profil.html" class="button" style="background-color:#f14e4e;text-decoration:none;color:white">More</a></td>
+	 		<td align="center"><a href="homeservice.html" class="button" style="background-color:#f14e4e;text-decoration:none;color:white">More</a></td>
+	 		<td align="center"><a href="information.html" class="button" style="background-color:#f14e4e;text-decoration:none;color:white">More</a></td>
+	 		<td align="center"><a href="csr.html" class="button" style="background-color:#f14e4e;text-decoration:none;color:white">More</a></td>
+	 		<td align="center"><a href="enterprise.html" class="button" style="background-color:#f14e4e;text-decoration:none;color:white">More</a></td>
+	 		<td align="center"><a href="wholesale.html" class="button" style="background-color:#f14e4e;text-decoration:none;color:white">More</a></td>
+	 	</tr>
+	 </table><br>
+	<div class="bgabu"><br><br>
+		<center>
+		<h2><font color="red" size="7">Telkom Indonesia Company Profile</font></h2>
+		<video width="800" height="500" controls autoplay>
+			<source src="video/video1.mp4" type="video/mp4">
+		</video>
+		</center>
+		<br><br>
+	</div>
+	<div class="bgmerah">
+		<center><br>
+		<table cellpadding="3">
+			<tr>
+				<th width="100" ><a href="https://www.facebook.com/aq.rapopo.3" style="text-decoration:none"><font face="cambria" size="4" color="white">AUTHOR</font></a></th>
+				<th width="100"><a href="https://www.telkom.co.id/sites" style="text-decoration:none"><font face="cambria" size="4" color="white">SITUS RESMI</font></th>
+				<th width="100"><a href="https://www.w3schools.com/html/default.asp" style="text-decoration:none"><font face="cambria" size="4" color="white">REFERENSI</font></th>
+			</tr>
+		</table>
+		</center>
+		<hr size="1" width="500" style="color: white">
+		<p align="center"><font face="calibri" color="white" size="2">Simple Design by Arif Dermawan 2020</font></p><br>
+	</div>
+</body>
+</html>
